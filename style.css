@@ -1,0 +1,165 @@
+/* Minimalist serif-based portfolio styling */
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-top: 60px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 20px;
+
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 25%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  background-color: #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+.project {
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 14px;
+  color: #666;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+
+  object-fit: cover;
+  height: 400px;
+  /* width: auto; */
+}
+
+.photo-grid img:hover {
+  transform: scale(1.03);
+}
+
+.wrapper1
+{
+  position: relative;
+}
+
+.wrapper1:hover .speech-bubble
+{
+  visibility: visible;
+}
+
+.speech-bubble
+{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+
+
+	/* position: relative; */
+	max-width: 30em;
+	
+	background-color: #fff;
+	/* padding: 1.125em 1.5em; */
+  padding: 0.4em;
+	font-size: 1em;
+  /* margin: 100px; */
+  line-height: 1em;
+	border-radius: 0.4rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubble::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 1.5em;
+	border: .75rem solid transparent;
+	border-top: none;
+
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
